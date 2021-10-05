@@ -18,7 +18,7 @@ public class WeatherStation implements Observateur
 	}
 
 	@Override
-	public void update(String sensorName, float temperature){
-		this.displayTemperature(sensorName, temperature);
+	public void update(EvenementObs event){
+		this.displayTemperature(event.getSensorName(), event.getTemperature());
 	}
 }

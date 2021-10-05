@@ -27,8 +27,9 @@ public class TemperatureSensor implements Observable
 
 	@Override
 	public void notifier(){
+		EvenementObs temp = new EvenementObs(this.name,this.temperature);
 		for(Observateur o : obs){
-			o.update(this.name,this.getTemperature());
+			o.update(temp);
 		}
 	}
 	

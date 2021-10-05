@@ -1,9 +1,10 @@
 public class TemperatureAlarm implements Observateur {
 
+
     @Override
-    public void update(String sensorName, float temperature){
-        if (temperature > 18 || temperature < 4) {
-            this.displayAlert(sensorName,temperature);
+    public void update(EvenementObs event){
+        if (event.getTemperature() > 18 || event.getTemperature() < 4) {
+            displayAlert(event.getSensorName(), event.getTemperature());
         }
     }
 
