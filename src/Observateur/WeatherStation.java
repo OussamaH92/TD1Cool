@@ -1,3 +1,8 @@
+package Observateur;
+
+import Observable.EvenementObs;
+import Observateur.Observateur;
+
 /**
  * Represente une station meteo
  */

@@ -1,4 +1,6 @@
-public class Thermometer implements Observateur{
+package Observable;
+
+public class Thermometer{
 
     private float temperature;
 
@@ -20,8 +22,4 @@ public class Thermometer implements Observateur{
                 return temperature;
             }
 
-    @Override
-    public void update(EvenementObs event) {
-        this.temperature = event.getTemperature();
-    }
 }

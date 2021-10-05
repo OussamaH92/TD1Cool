@@ -1,3 +1,7 @@
+package Observateur;
+
+import Observable.EvenementObs;
+
 public class TemperatureAlarm implements Observateur {
 
 
